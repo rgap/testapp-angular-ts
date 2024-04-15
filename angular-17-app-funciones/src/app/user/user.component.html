@@ -1,0 +1,15 @@
+<section>
+  @if (isLoggedIn) {
+  <p>Bienvenido, {{ username }}</p>
+  <img
+    (click)="greet()"
+    alt="photo"
+    src="https://github.com/rgap.png"
+    width="100px"
+  />
+  } @else {
+  <p>Inicia Sesión</p>
+  }
+
+  <app-games />
+</section>
